@@ -1,5 +1,5 @@
 FROM python:3.6-slim
-MAINTAINER "Akash S Patil"
+MAINTAINER "Akash Patil"
 
 RUN mkdir /app
 COPY app.py /app
