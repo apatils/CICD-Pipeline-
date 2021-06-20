@@ -11,5 +11,9 @@ def index():
     else:
         return 'Odd'
 
+@app.route("/hello", methods=["GET"])
+def another_pag():
+    return "Hello DevOps"
+
 
 app.run('0.0.0.0', debug=True, port=5050)
