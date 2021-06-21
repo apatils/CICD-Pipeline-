@@ -12,8 +12,8 @@ def index():
         return 'Odd'
 
 @app.route("/hello", methods=["GET"])
-def another_pag():
-    return "Hello DevOps"
+def another_page():
+    return "Hello Python !!!"
 
 
 app.run('0.0.0.0', debug=True, port=5050)
