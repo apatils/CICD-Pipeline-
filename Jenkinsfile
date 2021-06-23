@@ -3,6 +3,7 @@ remote.name = "ubuntu"
 remote.host = "172.31.30.51"
 remote.allowAnyHosts = true
 node {
+  checkout scm
   withCredentials([string(credentialsId: 'docker_hub', variable: 'DOCKER_HUB')]) {
     sh '''
     sudo docker build -t akashp/flask_test_ap .
