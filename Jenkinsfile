@@ -5,7 +5,7 @@ remote.allowAnyHosts = true
 node {
   withCredentials([string(credentialsId: 'docker_hub', variable: 'DOCKER_HUB')]) {
     sh '''
-    sudo docker build -t akashp/flask_test_ap.
+    sudo docker build -t akashp/flask_test_ap .
     sudo docker tag akashp/flask_test_ap akashp/flask_test_ap:1.0.${BUILD_ID}
     sudo docker login --username akashp --password ${DOCKER_HUB}
     sudo docker push akashp/flask_test_ap:1.0.${BUILD_ID}
