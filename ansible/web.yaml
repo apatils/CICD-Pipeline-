@@ -1,0 +1,21 @@
+---
+- name: Provision Web Servers
+  hosts: webservers
+  tasks:
+
+    - name: install pip3
+      apt:
+        update_cache: yes
+        name: python3-pip
+      become: yes
+
+    - name: Install Docker
+      apt:
+        name: docker.io
+      become: yes
+
+    - name: Start docker
+      shell: |
+        systemctl start docker
+        systemctl enable docker
+      become: yes
