@@ -16,7 +16,7 @@ node {
     remote.user = ubuntu
     remote.identityFile = identity
     stage("Deploy on flash-server") {
-      sshCommand remote: remote, command: "sudo docker stop $(sudo docker ps -a -q)"
+      sshCommand remote: remote, command: "sudo docker stop \$(sudo docker ps -a -q)"
 	  sshCommand remote: remote, command: "sudo docker run -dit -p 5050:5050 akashp/flask_test_ap:1.0.${BUILD_ID}"
     }
   }
