@@ -69,7 +69,7 @@ Prerequisite:
 - Checkout this repo locally and make change in **app.py**'s return string of _/hello_ endpoint to see changes
 - Push the code to main branch 
 - Wait for few minutes for changes to reflect in below link
-- [Check changes reflecting here](http://3.17.139.61:5050/hello) 
+- [Check changes reflecting here](http://3.142.144.170:5050/hello) 
  
 ## Contributor
 - Akash Patil <patilakashsuresh@gmail.com>
